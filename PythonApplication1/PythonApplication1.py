@@ -1,3 +1,25 @@
+#4
+#Puu läbimõõdu arvutamine
+#Kirjuta programm, 
+#mis küsib kasutaja käest puu ümbermõõdu
+#ning teatab selle peale puu läbimõõdu.
+
+
+
+
+#3
+# enda koodis laual olevate kommide arv muutujasse(kommide arv on juhuslik).
+#  Seejärel kuva muutujas olev kommide arv ekraanile kasutades print() käsku.
+#Küsi kasutajalt sisendit, mitu kommi ta soovib laualt ära võtta.
+# Eemalda soovitud kommide arv laual olevate kommide arvust ja kuva ekraanile,
+#  kui palju komme laual nüüd on. 
+from random import *
+laua_peal=randint(10.,50) #juhuslik arv
+print(f"Laual on {laua_peal} komm")
+võtab=int(input("Mitu kommi soovid laualt ära võtta? ")) #sisend võtab stringi täisarveks
+laua_peal=võtab #laua_peal-võtab, võtab kommid laualt maha
+print(f"Laualmon nüüd {laua_peal} kommi")
+
 
 # 2.
 #Mis tüüpi on järgnevad muutujad:
