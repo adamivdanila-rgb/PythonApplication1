@@ -3,6 +3,11 @@
 #Kirjuta programm, 
 #mis küsib kasutaja käest puu ümbermõõdu
 #ning teatab selle peale puu läbimõõdu.
+from math import *
+ümbermõõt=int(input("Sisesta puu ümbermõõt meetrites: ")) #int teisendab stringi täisarvuks
+
+läbimõõt=ümbermõõt/3.14 #labimõõt=ümbermõõt/3.14
+print(f"Puu läbimõõt on {läbimõõt: ,2f} meetrit") #.2f tähendab 2 kohta pärast koma)
 
 
 
