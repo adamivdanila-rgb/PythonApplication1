@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 #4
 #Puu läbimõõdu arvutamine
 #Kirjuta programm, 
