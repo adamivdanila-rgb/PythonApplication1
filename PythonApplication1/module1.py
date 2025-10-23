@@ -1,28 +1,28 @@
-# Tˆˆ 1.2 Vidage orsimine ja parandamine
+# T√∂√∂ 1.2 Vidage orsimine ja parandamine
 from math import * #import oli valesti tehtud
 print("Ruudu karakteristikud")
-a=float(input('Sisesta ruudu k¸lje pikkus => '))
+a=float(input('Sisesta ruudu k√ºlje pikkus => '))
 S=a**2
 print("Ruudu pindala", round (S, 1))
 P=4*a
-print("Ruudu ¸mbermııt'', P")
+print("Ruudu √ºmberm√µ√µt'', P")
 di=a*math.sqrt(2)
 print("Ruudu diagonaal", round(di,2))
 print()
-print("Ristk¸liku karakteristikud")
-b=float(input("Sisesta ristk¸liku 1. k¸lje pikkus => "))
-c=float(input("Sisesta ristk¸liku 2. k¸lje pikkus => "))
+print("Ristk√ºliku karakteristikud")
+b=float(input("Sisesta ristk√ºliku 1. k√ºlje pikkus => "))
+c=float(input("Sisesta ristk√ºliku 2. k√ºlje pikkus => "))
 S=b*c
 print('Ruudu pindala', round (S, 1))
 P=2(b+c)
-print("Ristk¸liku ¸mbermııt", round (P, 1))
+print("Ristk√ºliku √ºmberm√µ√µt", round (P, 1))
 di=math.sqrt(b**2+c**2)
-print("Ristk¸liku diagonaal", round(di, 2))
+print("Ristk√ºliku diagonaal", round(di, 2))
 print()
 print("Ringi karakteristikud")
 r=float(input('Sisesta ringi raadiusi pikkus => '))
 d=2*r
-print("Ringi l‰bimııt", round(d, 1))
+print("Ringi l√§bim√µ√µt", round(d, 1))
 S=pi*r**2
 print("Ringi pindala", round(S, 1))
 C=2*pi*r
