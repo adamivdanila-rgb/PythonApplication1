@@ -1,65 +1,59 @@
+print = ("Tere! Olen sinu uus sõber - Python!")
+nimi =input("Sisesta oma nimi: ")
+print = (f"{nimi}, oi kui ilus nimi! ")
+try:
+    soov=int(input(f"{nimi}! Kas leian Sinu keha indeksi? 0-ei, 1-jah =>")) 
+    if soov==1:
+        print("Indeksi leidmine")
+        # Küsi pikkust kuni on õiges formaadis ja vahemikus 0-200
+        while True:
+            try:
+                pikkus = int(input("Mis on sinu pikkus (cm)? "))    
+                if 0 < pikkus <= 250:
+                    break
+                else:
+                    print("Pikkus peab olema vahemikus 0 kuni 250 cm!")
+            except:
+                print("Vale pikkus formaat! Palun sisesta täisvara.")
 
 
+        # Küsi massi kuni on õiges fotmaadis ja vahemikus 0-200
+        while True:
+            try:
+                mass = int(input("Mis on sinu kaal (kg)?"))    
+                if 0 < mass <= 200:
+                    break
+                else:
+                    print("Kaal peab olema vahemikus 0 kuni 200 kg!")
+            except:
+                print("Vale kaalu formaat! Palun sisesta arv.")
+
+        # Arvuta kehamassiindeks (KMI)
+        indeks = round(mass / (0.01 * pikkus) ** 2, 2)
+        print(f"{nimi}! Sinu kehamassiindeks on: {indeks}")
+        # Hinda KMI. Tee seda ise
+        def arvitu_kmi():
+            print("KMI hinnang:")
+            if indeks < 16-19:
+                print("Alakaal")
+            elif 20 <= indeks < 25:
+                print("Normaalkaal")
+            elif 26 <= indeks < 30:
+                print("Ülekaal")
+            elif 31 <= indeks < 35:
+                print("Rasvumine")
+            elif 36 <= indeks < 40:
+                print("Tugev rasvumine")
+            elif indeks >= 4ˇ0:
+                print("Tervisele ohtlik rasvumine")
 
 
+    elif soov==0:
+        print("Kahju! See on väga kasulik info!")
+    else:
+        print("Vale valik. Saab valida ainult 1 või 0")
+except:
+    print("Vale soov!")
+    
+    
 
-
-
-
-
-#4
-#Puu läbimõõdu arvutamine
-#Kirjuta programm, 
-#mis küsib kasutaja käest puu ümbermõõdu
-#ning teatab selle peale puu läbimõõdu.
-from math import *
-ümbermõõt=int(input("Sisesta puu ümbermõõt meetrites: ")) #int teisendab stringi täisarvuks
-
-läbimõõt=ümbermõõt/3.14 #labimõõt=ümbermõõt/3.14
-print(f"Puu läbimõõt on {läbimõõt: ,2f} meetrit") #.2f tähendab 2 kohta pärast koma)
-
-
-
-
-#3
-# enda koodis laual olevate kommide arv muutujasse(kommide arv on juhuslik).
-#  Seejärel kuva muutujas olev kommide arv ekraanile kasutades print() käsku.
-#Küsi kasutajalt sisendit, mitu kommi ta soovib laualt ära võtta.
-# Eemalda soovitud kommide arv laual olevate kommide arvust ja kuva ekraanile,
-#  kui palju komme laual nüüd on. 
-from random import *
-laua_peal=randint(10.,50) #juhuslik arv
-print(f"Laual on {laua_peal} komm")
-võtab=int(input("Mitu kommi soovid laualt ära võtta? ")) #sisend võtab stringi täisarveks
-laua_peal=võtab #laua_peal-võtab, võtab kommid laualt maha
-print(f"Laualmon nüüd {laua_peal} kommi")
-
-
-# 2.
-#Mis tüüpi on järgnevad muutujad:
-#a) vanus = 18
-#b) eesnimi = "Jaak"
-#c) pikkus = 16.5
-#d) kas_käib_koolis = True
-#Mis võimalus veel peale True oleks viimast muutujat väärtustada? Kuidas võiks nende muutujate väärtusi koodis kontrollida?
-#Kirjuta kood tüüpide kontrollimiseks.
-vanus = 18        #int
-eesnimi = "Jaak"  #str
-pikkus = 1.65     #float
-kas_käib_koolis = True #bool
-print(f"vanus (vanus) on: {type(vanus)}")
-print(f"eesnimi {eesnimi} on:{type(eesnimi)} ")
-print(f"pikkus {pikkus} on: {type(pikkus)}")
-print(f"kas_käib_koolis {kas_käib_koolis} on: {type(kas_käib_koolis)}
-
-#Harjutus 1.1. Muutujad ja sisend
-#1.
-#Küsi kasutaja nimi ja muuda tekst, et ta näeks välja nii: “Tere, maailm! Tervitan sind Mati”, kui kasutaja nimi on Mati.
-#“Tere, maailm! Tervitan sind Mati! Sa oled N aastat vana.”
-
-print("Tere maailm!")
-nimi=input("Sisesta oma nimi: ")capitalize()#sisend ja ootab enterit
-print(f"Tere maailm! Tervitan sind {nimi}")
-vanus=int(input("Sisesta oma vanus: "))#int teisendab stringi
-print(f"Tere maailm! Tervitan sind {nimi.upper()}. Sa oled {vanus} aastat vana") #upper teeb suurused
-print(f"Tere maailm! Tervitan sind {nimi.upper()}. Sa oled {vanus} aastat vana") #lower 
