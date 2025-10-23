@@ -1,0 +1,7 @@
+name = "Даник"
+age = int(input("Возраст аутиста: "))
+
+if age < 18:
+    print(f"{name} молодой человек")
+else:
+    print(f"{name} взрослый человек")

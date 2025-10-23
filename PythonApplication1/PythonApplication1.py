@@ -47,10 +47,9 @@
 #             elif indeks >= 40:
 #                 print("Tervisele ohtlik rasvumine")
 
-
 #     elif soov==0:
 #         print("Kahju! See on väga kasulik info!")
 #     else:
 #         print("Vale valik. Saab valida ainult 1 või 0")
 # except:
-#     print = "Vale soov!"o
+#     print = "Vale soov!"rt
