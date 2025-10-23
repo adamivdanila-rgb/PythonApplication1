@@ -47,7 +47,7 @@
 #print(f"Lõplik hind: {loplik_hind:.2f} €")
 
 
-#Busside logistika
+#14 Busside logistika
 
 #Olgu meil vaja transportida teatud arv inimesi bussidega,
 #  milles on teatud arv kohti. Mitu bussi on vaja selleks, 
@@ -69,4 +69,5 @@
 #
 #   print(f"Vaja läheb {busside_arv} bussi.")
 #    if busside_arv > 0:
+
 #        print(f"Viimases bussis sõidab {viimases} inimest.")
