@@ -53,4 +53,4 @@
 #     else:
 #         print("Vale valik. Saab valida ainult 1 või 0")
 # except:
-#     print = "Vale soov!"
+#     print = "Vale soov!"o
