@@ -1,0 +1,17 @@
+#4.2Kirjutage programm, 
+#mis simuleerib mängu, 
+#mida mängivad vähemalt inimene ja robot või 2 inimest.
+
+import random
+mylist = ["kivi", "paber", "käärid"]
+random.shuffle(mylist)
+print(mylist)
+inimene = input("Vali kivi, paber voi kaarid: ")
+robot = mylist[0]
+print(f"Roboti valik on: {robot}")
+if inimene == robot:
+    print("Viik!")
+elif (inimene == "kivi" and robot == "käärid") or (inimene == "paber" and robot == "kivi") or (inimene == "käärid" and robot == "paber"):
+    print("Sa võitsid!")
+else:
+   print("Robot võitis!")
